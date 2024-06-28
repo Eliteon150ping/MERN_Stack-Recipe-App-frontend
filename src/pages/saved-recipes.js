@@ -12,7 +12,7 @@ export const SavedRecipes = () => {
     const fetchSavedRecipes = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:3001/recipes/user/${userID}`,
+          `https://mern-stack-recipe-app-backend.onrender.com/recipes/user/${userID}`,
           {
             headers: { authorization: `Bearer ${cookies.access_token}` },
           }

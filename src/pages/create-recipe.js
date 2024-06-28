@@ -40,7 +40,7 @@ export const CreateRecipe = () => {
     event.preventDefault();
     try {
       await axios.post(
-        "http://localhost:3001/recipes",
+        "https://mern-stack-recipe-app-backend.onrender.com/recipes",
         { ...recipe },
         {
           headers: { authorization: `Bearer ${cookies.access_token}` }, // Include "Bearer" prefix
